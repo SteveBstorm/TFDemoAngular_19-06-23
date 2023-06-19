@@ -1,0 +1,23 @@
+<h3>Pipes</h3>
+<p>Valeur de myString : {{myString}}</p>
+<p>Pipe uppercase : {{myString | uppercase}}</p>
+<p>Pipe lowercase : {{myString | lowercase}}</p>
+<p>Pipe titlecase : {{myString | titlecase}}</p>
+<hr />
+
+<p>Valeur de myNumber : {{myNumber}}</p>
+<p>Pipe number : {{myNumber | number : '1.1-2'}}</p>
+<p>Currency number : {{myNumber | currency : 'USD'}}</p>
+<hr />
+
+<p>Valeur de myDate : {{myDate}}</p>
+<p>Pipe date : {{myDate | date : 'dd/MMMM/yy'}}</p>
+<hr />
+
+<p>Valeur de myOject : {{myObject}}</p>
+<p>pipe json : {{myObject | json}}</p>
+
+<hr />
+<p>Valeur en euro : {{myNumber | currency : 'EUR'}}</p>
+<p>Valeur avec pipe custom (usd) :
+   {{myNumber | eurtousd : 'eur' }}</p>
