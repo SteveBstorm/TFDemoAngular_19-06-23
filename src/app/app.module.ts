@@ -11,6 +11,7 @@ import { Demo3Component } from './demos/components/demo3/demo3.component';
 import { EurtousdPipe } from './demos/pipes/eurtousd.pipe';
 import { Exo1Component } from './exercices/exo1/exo1.component';
 import { TotimePipe } from './exercices/exo1/totime.pipe';
+import { Demo4Component } from './demos/components/demo4/demo4.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { TotimePipe } from './exercices/exo1/totime.pipe';
     Demo3Component,
     EurtousdPipe,
     Exo1Component,
-    TotimePipe
+    TotimePipe,
+    Demo4Component
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,14 @@
+<h3>Structural Directives</h3>
+<p (click)="switchVisible()">Click ici</p>
+<div *ngIf="isVisible"
+    style="border : 2px chartreuse solid;">
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum voluptas deleniti nisi mollitia magni expedita facere aliquid magnam natus nobis velit, nostrum eum quia veniam error ut voluptatem cumque tempore!
+</div>
+
+<hr />
+<button (click)="parcourir()">Test</button>
+<ul>
+  <li *ngFor="let s of series; let i = index; let impair = odd">
+  <p [class]="impair ? 'odd' : 'even'">{{i}} {{s.titre}} - {{s.genre}}</p>
+  </li>
+</ul>
