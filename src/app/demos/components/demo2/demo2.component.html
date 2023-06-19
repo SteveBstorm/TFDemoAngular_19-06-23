@@ -1,0 +1,18 @@
+<h3>Event + Attribute Binding</h3>
+<p [class]="value > 5 ? 'maClasse' : ''">Valeur : {{value}}</p>
+<button (click)="add()"
+  [disabled]="value > 9">+</button>
+<button (click)="remove()"
+  [disabled]="value < 1">-</button>
+
+<p>
+  <img [src]="url">
+</p>
+
+<hr />
+<!--
+  {{propertyName}} => Lire le contenu pour l'afficher (html)
+  [(ngModel)]="prop" => Modifier le contenu d'une prop (cf: demo1)
+  (event)="methode()" => Event binding => Déclencher du code sur un event js
+  [attribute]="" => lier quelque chose à un attribut
+ -->

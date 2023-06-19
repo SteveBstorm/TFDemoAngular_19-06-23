@@ -1,0 +1,8 @@
+<h3>Demo : Bindings</h3>
+<p>Valeur de myString : {{myString}}</p>
+<!-- {{}} = Binding One-Way : Lecture seule -->
+<p><input [(ngModel)]="myString"></p>
+  <!-- <input value="myString" onChange="">-->
+<!-- [(ngModel)] = Binding Two-Ways : Lecture/ecriture-->
+<p>Valeur de myProp : {{myProp.title}}
+   - {{myProp.year}}</p>
