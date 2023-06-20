@@ -1,0 +1,19 @@
+<h3>@Input / @Output</h3>
+
+<div>
+  Contenu de démo 5
+  <p>Réponse de l'enfant : {{reponseDeEnfant}}</p>
+</div>
+
+<div style="border : 2px black solid">
+  <app-enfant
+        question="Tu viens manger ?"
+        (responseEvent)="recevoirReponse($event)"
+        >
+  <p style="background-color: aquamarine;">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit assumenda odit quis adipisci officia? Assumenda rerum quibusdam perspiciatis doloremque nemo id, minus reprehenderit harum aliquid laboriosam, tempore labore repudiandae animi.
+  </p>
+
+  </app-enfant>
+</div>
+

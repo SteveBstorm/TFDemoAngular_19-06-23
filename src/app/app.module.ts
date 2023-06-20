@@ -12,6 +12,9 @@ import { EurtousdPipe } from './demos/pipes/eurtousd.pipe';
 import { Exo1Component } from './exercices/exo1/exo1.component';
 import { TotimePipe } from './exercices/exo1/totime.pipe';
 import { Demo4Component } from './demos/components/demo4/demo4.component';
+import { HighlightDirective } from './demos/directives/highlight.directive';
+import { Demo5Component } from './demos/components/demo5/demo5.component';
+import { EnfantComponent } from './demos/components/demo5/enfant/enfant.component';
 
 
 @NgModule({
@@ -24,7 +27,10 @@ import { Demo4Component } from './demos/components/demo4/demo4.component';
     EurtousdPipe,
     Exo1Component,
     TotimePipe,
-    Demo4Component
+    Demo4Component,
+    HighlightDirective,
+    Demo5Component,
+    EnfantComponent
   ],
   imports: [
     BrowserModule,
