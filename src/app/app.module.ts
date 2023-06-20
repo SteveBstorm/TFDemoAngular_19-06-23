@@ -15,6 +15,8 @@ import { Demo4Component } from './demos/components/demo4/demo4.component';
 import { HighlightDirective } from './demos/directives/highlight.directive';
 import { Demo5Component } from './demos/components/demo5/demo5.component';
 import { EnfantComponent } from './demos/components/demo5/enfant/enfant.component';
+import { Exo2Component } from './exercices/exo2/exo2.component';
+import { ListeComponent } from './exercices/exo2/liste/liste.component';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import { EnfantComponent } from './demos/components/demo5/enfant/enfant.componen
     Demo4Component,
     HighlightDirective,
     Demo5Component,
-    EnfantComponent
+    EnfantComponent,
+    Exo2Component,
+    ListeComponent
   ],
   imports: [
     BrowserModule,

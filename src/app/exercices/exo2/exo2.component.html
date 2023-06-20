@@ -1,0 +1,10 @@
+<h3>Shopping List</h3>
+<p>Nouvel article :
+  <input [(ngModel)]="nouvelArticle" />
+  <button (click)="ajout()">Ajouter</button>
+</p>
+<div style="border : black 2px dashed;">
+  <app-liste [listEnfant]="listArticle"
+             (retirerEvent)="retirerParent($event)"
+  ></app-liste>
+</div>

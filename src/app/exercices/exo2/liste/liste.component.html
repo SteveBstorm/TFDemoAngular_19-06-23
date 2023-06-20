@@ -1,0 +1,5 @@
+<ul *ngIf="listEnfant.length > 0">
+  <li *ngFor="let a of listEnfant; let i = index;">
+    {{a}} <button [id]="'button_'+i" (click)="retirerEnfant(i)" >-X-</button>
+  </li>
+</ul>
