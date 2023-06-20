@@ -8,6 +8,8 @@ import { Exo1Component } from './exercices/exo1/exo1.component';
 import { Demo4Component } from './demos/components/demo4/demo4.component';
 import { Demo5Component } from './demos/components/demo5/demo5.component';
 import { Exo2Component } from './exercices/exo2/exo2.component';
+import { Demo6Component } from './demos/components/demo6/demo6.component';
+import { Demo7Component } from './demos/components/demo7/demo7.component';
 
 const routes: Routes = [
   { path : 'home', component : HomeComponent},
@@ -16,6 +18,8 @@ const routes: Routes = [
   { path : 'demo3', component : Demo3Component},
   { path : 'demo4', component : Demo4Component},
   { path : 'demo5', component : Demo5Component},
+  { path : 'demo6', component : Demo6Component},
+  { path : 'demo7', component : Demo7Component},
   { path : 'exo1', component : Exo1Component},
   { path : 'exo2', component : Exo2Component},
 ];

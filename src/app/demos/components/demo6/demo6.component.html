@@ -1,0 +1,4 @@
+<h3>Demo Service et injection</h3>
+<p>Etat de connexion : {{status}}</p>
+<button (click)="login()" *ngIf="!status">Connexion</button>
+<button (click)="logout()" *ngIf="status">Deconnexion</button>

@@ -1,0 +1,7 @@
+<p>demo7 works!</p>
+
+<select [(ngModel)]="selectedColor">
+  <option *ngFor="let c of colors"
+    [value]="c"
+  >{{c}}</option>
+</select>

@@ -17,6 +17,8 @@ import { Demo5Component } from './demos/components/demo5/demo5.component';
 import { EnfantComponent } from './demos/components/demo5/enfant/enfant.component';
 import { Exo2Component } from './exercices/exo2/exo2.component';
 import { ListeComponent } from './exercices/exo2/liste/liste.component';
+import { Demo6Component } from './demos/components/demo6/demo6.component';
+import { Demo7Component } from './demos/components/demo7/demo7.component';
 
 
 @NgModule({
@@ -34,7 +36,9 @@ import { ListeComponent } from './exercices/exo2/liste/liste.component';
     Demo5Component,
     EnfantComponent,
     Exo2Component,
-    ListeComponent
+    ListeComponent,
+    Demo6Component,
+    Demo7Component
   ],
   imports: [
     BrowserModule,

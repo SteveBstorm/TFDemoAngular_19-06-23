@@ -1,11 +1,15 @@
-<h1>Hello world</h1>
+<div [style]="'background-color: '+color">
+  <h1>Hello world {{status}}</h1>
 <a routerLink="home">Home</a> |
 <a routerLink="demo1">Bindings</a> |
 <a routerLink="demo2">Event Binding</a> |
 <a routerLink="demo3">Pipes</a> |
 <a routerLink="demo4">Directives</a> |
 <a routerLink="demo5">@Input/@Output</a> |
+<a routerLink="demo6">Service & Injection</a> |
+<a routerLink="demo7">Observable</a> |
 <a routerLink="exo1">Chrono</a> |
 <a routerLink="exo2">Shopping List</a> |
 <hr />
+</div>
 <router-outlet></router-outlet>
