@@ -1,0 +1,19 @@
+Enoncé exercices : 
+------------------
+
+reprendre l'exercice  liste de course
+transférer la logique fonctionnel dans un service
+
+Ajouter la possibilité d'avoir plusieurs article identique (exemple : Tomates 6)
+	----> Bouton + et -
+
+Dans l'entête de l'application : Afficher combien d'article sont dans mon panier (=> observable)
+
+
+Services : 
+	Liste d'article {label, qty}
+	Methode Add, remove, addQuantity, remQuantity
+
+2 composants :
+	1) Ajouter mes articles
+	2) Afficher ma liste et les boutons (+ - et supprimer)
