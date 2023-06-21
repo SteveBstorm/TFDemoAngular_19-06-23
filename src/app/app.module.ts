@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { Demo1Component } from './demos/components/demo1/demo1.component';
 import { HomeComponent } from './home/home.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Demo2Component } from './demos/components/demo2/demo2.component';
 import { Demo3Component } from './demos/components/demo3/demo3.component';
 import { EurtousdPipe } from './demos/pipes/eurtousd.pipe';
@@ -22,6 +22,13 @@ import { Demo7Component } from './demos/components/demo7/demo7.component';
 import { Exo3Component } from './exercices/exo3/exo3.component';
 import { PanierComponent } from './exercices/exo3/panier/panier.component';
 
+import { HttpClientModule} from '@angular/common/http';
+import { Demo8Component } from './demos/components/demo8/demo8.component';
+import { Demo9Component } from './demos/components/demo9/demo9.component';
+import { TargetComponent } from './demos/components/demo8/target/target.component';
+import { ExercicesComponent } from './exercices/exercices.component';
+import { DemosComponent } from './demos/demos.component';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
@@ -42,12 +49,20 @@ import { PanierComponent } from './exercices/exo3/panier/panier.component';
     Demo6Component,
     Demo7Component,
     Exo3Component,
-    PanierComponent
+    PanierComponent,
+    Demo8Component,
+    Demo9Component,
+    TargetComponent,
+    ExercicesComponent,
+    DemosComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

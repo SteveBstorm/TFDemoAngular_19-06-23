@@ -1,0 +1,23 @@
+<p>target works!</p>
+id : {{id}}
+{{currentArticle | json}}
+<form *ngIf="currentArticle" [formGroup]="myFormGroup" >
+  <p>Id : <input type="number" formControlName="id"></p>
+  <p>Label : <input type="text" formControlName="label"></p>
+  <p *ngIf="myFormGroup.controls['label'].invalid && myFormGroup.controls['label'].dirty">
+    Label requis
+  </p>
+  <p>Price : <input type="number" formControlName="price"></p>
+  <p *ngIf="myFormGroup.controls['price'].invalid && myFormGroup.controls['price'].touched">
+    Prix obligatoirement positif
+  </p>
+  <p>Description : <input formControlName="description">
+    <!-- <option></option>
+    <option *ngFor="let o of listDesc"
+            [value]="o.value">{{o.label}}
+          </option> -->
+    <!-- <option value="TB">Très bien</option>
+    <option value="nul">Très nul</option> -->
+  </p>
+  <button [disabled]="myFormGroup.invalid">Valider</button> <button type="reset">Vider</button>
+</form>

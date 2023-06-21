@@ -1,0 +1,8 @@
+<p>demo8 works!</p>
+<ul>
+  <li *ngFor="let a of listArticle">
+    <a [routerLink]="['../target', a.id]">{{a.label}}</a>
+  </li>
+</ul>
+{{listArticle | json}}
+<button (click)="postArticle()">Send</button>
