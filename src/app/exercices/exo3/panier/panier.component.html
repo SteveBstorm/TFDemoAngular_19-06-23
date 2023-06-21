@@ -1,0 +1,11 @@
+<div *ngIf="listArticle.length == 0">
+  Aucun article dans la liste
+</div>
+<ul>
+  <li *ngFor="let a of listArticle; let i = index;">
+    {{a.label}} : {{a.quantity}}
+    <button (click)="addQty(i)">+</button> &nbsp;
+    <button (click)="remQty(i)">-</button> &nbsp;
+    <button (click)="remove(i)">Supprimer</button>
+  </li>
+</ul>

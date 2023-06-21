@@ -10,6 +10,7 @@ import { Demo5Component } from './demos/components/demo5/demo5.component';
 import { Exo2Component } from './exercices/exo2/exo2.component';
 import { Demo6Component } from './demos/components/demo6/demo6.component';
 import { Demo7Component } from './demos/components/demo7/demo7.component';
+import { Exo3Component } from './exercices/exo3/exo3.component';
 
 const routes: Routes = [
   { path : 'home', component : HomeComponent},
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path : 'demo7', component : Demo7Component},
   { path : 'exo1', component : Exo1Component},
   { path : 'exo2', component : Exo2Component},
+  { path : 'exo3', component : Exo3Component},
 ];
 
 @NgModule({

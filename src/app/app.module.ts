@@ -19,6 +19,8 @@ import { Exo2Component } from './exercices/exo2/exo2.component';
 import { ListeComponent } from './exercices/exo2/liste/liste.component';
 import { Demo6Component } from './demos/components/demo6/demo6.component';
 import { Demo7Component } from './demos/components/demo7/demo7.component';
+import { Exo3Component } from './exercices/exo3/exo3.component';
+import { PanierComponent } from './exercices/exo3/panier/panier.component';
 
 
 @NgModule({
@@ -38,7 +40,9 @@ import { Demo7Component } from './demos/components/demo7/demo7.component';
     Exo2Component,
     ListeComponent,
     Demo6Component,
-    Demo7Component
+    Demo7Component,
+    Exo3Component,
+    PanierComponent
   ],
   imports: [
     BrowserModule,
